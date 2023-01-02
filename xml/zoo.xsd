@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+        targetNamespace="http://www.juicers.org"
+        xmlns:tns="http://www.juicers.org"
+        elementFormDefault="qualified">
+
+    <element name="Zoo">
+        <complexType>
+            <sequence>
+                <element name="Morada" maxOccurs="1">
+                    <complexType>
+                        <sequence>
+                            <element name="Pais" type="string"></element>
+                            <element name="Cidade" type="string"></element>
+                            <element name="CodPostal">
+                                <simpleType>
+                                    <restriction base="string">
+                                        <pattern value="[0-9]{4}/-[0-9]{3}"></pattern>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="AnoFund" type="int"></element>
+                <element name="QuantidadeAnimais" type="int"></element>
+                <element name="Animais" maxOccurs="1">
+                    <complexType>
+                        <sequence>
+                            <element name="Animal" maxOccurs="unbounded">
+                                <complexType>
+                                    <sequence>
+                                        <element name="Especie" type="string"></element>
+                                        <element name="SubEspecie" type="string"></element>
+                                        <element name="Nome" type="string"></element>
+                                        <element name="Idade">
+                                        <simpleType>
+                                            <restriction base="int">
+                                                <maxInclusive value="200"></maxInclusive>
+                                                <minExclusive value="0"></minExclusive>
+                                            </restriction>
+                                        </simpleType>
+                                        </element>
+                                    </sequence>
+                                </complexType>
+                            </element>
+                            <element name="Espécies">
+                                <complexType>
+                                    <sequence>
+                                        <element name="Nome" type="string"></element>
+                                        <element name="Descricao" type="string"></element>
+                                        <element name="Local"></element>
+                                    </sequence>
+                                </complexType>
+                            </element>
+                            <element name="SubEspécie">
+                                <complexType>
+                                    <sequence>
+                                        <element name="Nome" type="string"></element>
+                                        <element name="Descricao" type="string"></element>
+                                        <element name="Espécie" type="string"></element>
+                                    </sequence>
+                                </complexType>
+                            </element>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="Funcionarios" maxOccurs="1">
+                    <complexType>
+                        <sequence>
+                            <element name="funcionário">
+                                <complexType>
+                                    <sequence>
+                                        <element name="Nome" type="string"></element>
+                                        <element name="Descricao" type="string"></element>
+                                        <element name="Especialidade" type="string"></element>
+                                    </sequence>
+                                </complexType>
+                            </element>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="Loja" maxOccurs="1">
+                    <complexType>
+                        <sequence>
+                            <element name="Artigo">
+                                <complexType>
+                                    <sequence>
+                                        <element name="Nome" type="string"></element>
+                                        <element name="Preco" type="decimal"></element>
+                                        <element name="Categoria">
+                                            <simpleType>
+                                                <restriction base="token">
+                                                    <enumeration value="Felino"></enumeration>
+                                                    <enumeration value="Peixe"></enumeration>
+                                                    <enumeration value="Réptil"></enumeration>
+                                                    <enumeration value="Primata"></enumeration>
+                                                    <enumeration value="Ave"></enumeration>
+                                                </restriction>
+                                            </simpleType>
+                                        </element>
+                                        <element name="Quantidade">
+                                            <simpleType>
+                                                <restriction base="int">
+                                                    <minExclusive value="0"></minExclusive>
+                                                </restriction>
+                                            </simpleType>
+                                        </element>
+                                    </sequence>
+                                </complexType>
+                            </element>
+                        </sequence>
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+        
+    </element>
+
+</schema>

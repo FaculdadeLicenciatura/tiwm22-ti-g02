@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Zoo mlns="http://www.juicers.org"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.juicers.org zoo.xsd">
+    <Morada>
+        <Pais>Portugal</Pais>
+        <Cidade>Porto</Cidade>
+        <CodPostal>4440-897</CodPostal>
+    </Morada>
+    <AnoFund>2022</AnoFund>
+    <QuantidadeAnimais>10</QuantidadeAnimais>
+    <Animais>
+        <Animal>
+            <Especie>Gorila</Especie>
+            <SubEspecie>Grande</SubEspecie>
+            <Nome>King Kong</Nome>
+            <Idade>10</Idade>
+        </Animal>
+        <Animal>
+            <Especie>Leão</Especie>
+            <SubEspecie>Africano</SubEspecie>
+            <Nome>Simba</Nome>
+            <Idade>7</Idade>
+        </Animal>
+        <Animal>
+            <Especie>Suricata</Especie>
+            <SubEspecie>Pintada</SubEspecie>
+            <Nome>Timon</Nome>
+            <Idade>5</Idade>
+        </Animal>
+        <Animal>
+            <Especie>Javali</Especie>
+            <SubEspecie>Africano</SubEspecie>
+            <Nome>Pumba</Nome>
+            <Idade>7</Idade>
+        </Animal>
+        <Animal>
+            <Especie>Veado</Especie>
+            <SubEspecie>Vermelho</SubEspecie>
+            <Nome>Bambi</Nome>
+            <Idade>10</Idade>
+        </Animal>
+        <Animal>
+            <Especie>Elefante</Especie>
+            <SubEspecie>Africano</SubEspecie>
+            <Nome>Dumbo</Nome>
+            <Idade>15</Idade>
+        </Animal>
+        <Animal>
+            <Especie>Cavalo</Especie>
+            <SubEspecie>Mustangue</SubEspecie>
+            <Nome>Spirit</Nome>
+            <Idade>18</Idade>
+        </Animal>
+        <Animal>
+            <Especie>Peixe</Especie>
+            <SubEspecie>Palhaço</SubEspecie>
+            <Nome>Nemo</Nome>
+            <Idade>5</Idade>
+        </Animal>
+        <Animal>
+            <Especie>Urso</Especie>
+            <SubEspecie>Panda</SubEspecie>
+            <Nome>Pô</Nome>
+            <Idade>15</Idade>
+        </Animal>
+        <Animal>
+            <Especie>Ornitorrinco</Especie>
+            <SubEspecie>Castanho</SubEspecie>
+            <Nome>Perry</Nome>
+            <Idade>18</Idade>
+        </Animal>
+        <Especie>
+            <Nome>Gorila</Nome>
+            <Descricao>É um gorila</Descricao>
+            <Local>Floresta</Local>
+        </Especie>
+        <Especie>
+            <Nome>Leão</Nome>
+            <Descricao>É um Leão</Descricao>
+            <Local>Selva</Local>
+        </Especie>
+        <Especie>
+            <Nome>Elefante</Nome>
+            <Descricao>É um elefante</Descricao>
+            <Local>Floresta</Local>
+        </Especie>
+        <Especie>
+            <Nome>Peixe</Nome>
+            <Descricao>É um Peixe</Descricao>
+            <Local>Mar</Local>
+        </Especie>
+        <SubEspecie>
+            <Nome>Africano</Nome>
+            <Especie>Leão</Especie>
+            <Descricao>Leão que vive em Africa</Descricao>
+        </SubEspecie>
+        <SubEspecie>
+            <Nome>Panda</Nome>
+            <Especie>Urso</Especie>
+            <Descricao>Meste das martes Marciais</Descricao>
+        </SubEspecie>
+        <SubEspecie>
+            <Nome>Gorila</Nome>
+            <Especie>Grande</Especie>
+            <Descricao>Gorila grande mas simpático</Descricao>
+        </SubEspecie>
+    </Animais>
+    <Funcionarios>
+        <funcionário>
+            <Nome>Henrique</Nome>
+            <Descricao>Jogar ás escondidas</Descricao>
+            <Especialidade>Felinos</Especialidade>
+        </funcionário>
+        <funcionário>
+            <Nome>Alexandre</Nome>
+            <Descricao>Jogar airsoft ou lá o que é</Descricao>
+            <Especialidade>Caçador</Especialidade>
+        </funcionário>
+        <funcionário>
+            <Nome>Garrido</Nome>
+            <Descricao>Estagiário</Descricao>
+            <Especialidade>Ainda por apurar</Especialidade>
+        </funcionário>
+    </Funcionarios>
+    <Loja>
+        <Artigo>
+            <Nome>Pluxe Leão</Nome>
+            <Preco>20.00</Preco>
+            <Categoria>Felino</Categoria>
+            <Quantidade>30</Quantidade>
+        </Artigo>
+        <Artigo>
+            <Nome>Pluxe Nemo</Nome>
+            <Preco>20.00</Preco>
+            <Categoria>Peixe</Categoria>
+            <Quantidade>20</Quantidade>
+        </Artigo>
+        <Artigo>
+            <Nome>Pluxe Tigre</Nome>
+            <Preco>20.00</Preco>
+            <Categoria>Felino</Categoria>
+            <Quantidade>50</Quantidade>
+        </Artigo>
+    </Loja>
+</Zoo>

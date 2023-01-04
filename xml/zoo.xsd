@@ -15,7 +15,7 @@
                             <element name="CodPostal">
                                 <simpleType>
                                     <restriction base="string">
-                                        <pattern value="[0-9]{4}/-[0-9]{3}"></pattern>
+                                        <pattern value="[0-9]{4}-[0-9]{3}"></pattern>
                                     </restriction>
                                 </simpleType>
                             </element>
@@ -45,21 +45,22 @@
                                     </sequence>
                                 </complexType>
                             </element>
-                            <element name="Espécies">
+                            <element name="Especie" maxOccurs="unbounded">
                                 <complexType>
                                     <sequence>
                                         <element name="Nome" type="string"></element>
                                         <element name="Descricao" type="string"></element>
-                                        <element name="Local"></element>
+                                        <element name="Local" type="string"></element>
                                     </sequence>
                                 </complexType>
                             </element>
-                            <element name="SubEspécie">
+                            <element name="SubEspecie" maxOccurs="unbounded">
                                 <complexType>
                                     <sequence>
                                         <element name="Nome" type="string"></element>
+                                        <element name="Especie" type="string"></element>
                                         <element name="Descricao" type="string"></element>
-                                        <element name="Espécie" type="string"></element>
+                                        
                                     </sequence>
                                 </complexType>
                             </element>
@@ -69,7 +70,7 @@
                 <element name="Funcionarios" maxOccurs="1">
                     <complexType>
                         <sequence>
-                            <element name="funcionário">
+                            <element name="funcionário" maxOccurs="unbounded">
                                 <complexType>
                                     <sequence>
                                         <element name="Nome" type="string"></element>
@@ -84,7 +85,7 @@
                 <element name="Loja" maxOccurs="1">
                     <complexType>
                         <sequence>
-                            <element name="Artigo">
+                            <element name="Artigo" maxOccurs="unbounded">
                                 <complexType>
                                     <sequence>
                                         <element name="Nome" type="string"></element>
@@ -97,6 +98,7 @@
                                                     <enumeration value="Réptil"></enumeration>
                                                     <enumeration value="Primata"></enumeration>
                                                     <enumeration value="Ave"></enumeration>
+                                                    <enumeration value="Bilhete"></enumeration>
                                                 </restriction>
                                             </simpleType>
                                         </element>

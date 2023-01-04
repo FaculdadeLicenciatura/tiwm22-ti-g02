@@ -142,5 +142,23 @@
             <Categoria>Felino</Categoria>
             <Quantidade>50</Quantidade>
         </Artigo>
+        <Artigo>
+            <Nome>Bilhete Adulto</Nome>
+            <Preco>29.99</Preco>
+            <Categoria>Bilhete</Categoria>
+            <Quantidade>100</Quantidade>
+        </Artigo>
+        <Artigo>
+            <Nome>Bilhete Idoso</Nome>
+            <Preco>19.99</Preco>
+            <Categoria>Bilhete</Categoria>
+            <Quantidade>100</Quantidade>
+        </Artigo>
+        <Artigo>
+            <Nome>Bilhete Criança</Nome>
+            <Preco>9.99</Preco>
+            <Categoria>Bilhete</Categoria>
+            <Quantidade>100</Quantidade>
+        </Artigo>
     </Loja>
 </Zoo>

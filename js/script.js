@@ -16,3 +16,39 @@ const getAnimals = ()=> {
     })
 }
 
+const GetBilhetes = () => {
+    $.ajax(url).done(function(xml){
+        $(xml).find("Artigo").each(function(){
+            console.log($(this).find("Categoria").text())
+            if($(this).find("Categoria").text() == "Bilhete")
+            {
+                $("#precos").append(`<table>
+                        <thead>
+                            <tr>
+                                <td colspan="7">
+                                    Nome
+                                </td>
+                                <td colspan="3">
+                                    Preco
+                                </td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="7">
+                                    ${$(this).find("Nome").text()}
+                                </td>
+                                <td colspan="3">
+                                    ${$(this).find("Preco").text()}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>`);
+            }
+            
+        });
+    }).fail(function(){
+        alert("fuck");
+    })
+}
+

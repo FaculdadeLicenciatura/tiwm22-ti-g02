@@ -15,60 +15,70 @@
             <SubEspecie>Grande</SubEspecie>
             <Nome>King Kong</Nome>
             <Idade>10</Idade>
+            <Foto>https://ichef.bbci.co.uk/news/976/cpsprodpb/D2D2/production/_118707935_untitled-1.jpg</Foto>
         </Animal>
         <Animal>
             <Especie>Leão</Especie>
             <SubEspecie>Africano</SubEspecie>
             <Nome>Simba</Nome>
             <Idade>7</Idade>
+            <Foto>https://www.infoescola.com/wp-content/uploads/2017/04/leao-126767138.jpg</Foto>
         </Animal>
         <Animal>
             <Especie>Suricata</Especie>
             <SubEspecie>Pintada</SubEspecie>
             <Nome>Timon</Nome>
             <Idade>5</Idade>
+            <Foto>https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Meerkat_feb_09.jpg/1200px-Meerkat_feb_09.jpg</Foto>
         </Animal>
         <Animal>
             <Especie>Javali</Especie>
             <SubEspecie>Africano</SubEspecie>
             <Nome>Pumba</Nome>
             <Idade>7</Idade>
+            <Foto>https://upload.wikimedia.org/wikipedia/commons/0/01/Tarangire_Warzenschwein1.jpg</Foto>
         </Animal>
         <Animal>
             <Especie>Veado</Especie>
             <SubEspecie>Vermelho</SubEspecie>
             <Nome>Bambi</Nome>
             <Idade>10</Idade>
+            <Foto>https://www.wilder.pt/wp-content/uploads/2022/06/1280px-Cervus_elaphus_Luc_Viatour_6.jpg</Foto>
         </Animal>
         <Animal>
             <Especie>Elefante</Especie>
             <SubEspecie>Africano</SubEspecie>
             <Nome>Dumbo</Nome>
             <Idade>15</Idade>
+            <Foto>https://caracolga.pt/wp-content/uploads/2019/01/elefante.jpg</Foto>
         </Animal>
         <Animal>
             <Especie>Cavalo</Especie>
             <SubEspecie>Mustangue</SubEspecie>
             <Nome>Spirit</Nome>
             <Idade>18</Idade>
+            <Foto>https://guiaanimal.net/uploads/content/image/69019/AdobeStock_326500445.jpeg</Foto>
         </Animal>
         <Animal>
             <Especie>Peixe</Especie>
             <SubEspecie>Palhaço</SubEspecie>
             <Nome>Nemo</Nome>
             <Idade>5</Idade>
+            <Foto>https://www.oceanario.pt/content/img/peixe_palhao_pedro_a._pina.jpg</Foto>
         </Animal>
         <Animal>
             <Especie>Urso</Especie>
             <SubEspecie>Panda</SubEspecie>
             <Nome>Pô</Nome>
             <Idade>15</Idade>
+            <Foto>https://bordalo.observador.pt/v2/q:84/rs:fill:2000:1126/c:2000:1126:nowe:0:104/plain/https://s3.observador.pt/wp-content/uploads/2017/01/23132545/76895950.jpg</Foto>
         </Animal>
         <Animal>
             <Especie>Ornitorrinco</Especie>
             <SubEspecie>Castanho</SubEspecie>
             <Nome>Perry</Nome>
             <Idade>18</Idade>
+            <Foto>https://imagens.mdig.com.br/bichos/monotremado_ornitorrinco.jpg</Foto>
         </Animal>
         <Especie>
             <Nome>Gorila</Nome>

@@ -41,6 +41,7 @@
                                             </restriction>
                                         </simpleType>
                                         </element>
+                                        <element name="Foto" type="anyURI"></element>
                                     </sequence>
                                 </complexType>
                             </element>

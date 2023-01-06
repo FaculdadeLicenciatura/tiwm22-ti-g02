@@ -33,6 +33,8 @@
                                         <element name="Especie" type="string"></element>
                                         <element name="SubEspecie" type="string"></element>
                                         <element name="Nome" type="string"></element>
+                                        <element name="Descricao" type="string"></element>
+                                        <element name="SmallDesc" type="string"></element>
                                         <element name="Idade">
                                         <simpleType>
                                             <restriction base="int">

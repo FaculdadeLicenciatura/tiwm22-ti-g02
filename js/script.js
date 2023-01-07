@@ -16,20 +16,20 @@ let url = "../xml/zoo.xml";
 //     })
 // }
 
-const getAnimals = ()=> {
-    $.ajax(url).done(function(xml){
-        $(xml).find("Animal").each(function(){
+const getAnimals = () => {
+    $.ajax(url).done(function (xml) {
+        $(xml).find("Animal").each(function () {
             $("#animais").append(`
             <figure class="AnimalClass">
-  <img src="${$(this).find("Foto").text()}" class="image" alt="${$(this).find("Nome").text()} Image"/>
-  <figcaption>
-    <h2>${$(this).find("Nome").text()}<span>${$(this).find("Especie").text()} ${$(this).find("SubEspecie").text()}</span></h2><h3><span class="customAge">${$(this).find("Idade").text()} Anos</span></h3>
-    <p>${$(this).find("SmallDesc").text()}</p>
-    <a href="#" class="info">Mais Informações</a>
-  </figcaption>
-</figure>`);
+                <img src="${$(this).find("Foto").text()}" class="image" alt="${$(this).find("Nome").text()} Image"/>
+                <figcaption>
+                    <h2>${$(this).find("Nome").text()}<span>${$(this).find("NomeEspecie").text()} ${$(this).find("NomeSubEspecie").text()}</span></h2><h3><span class="customAge">${$(this).find("Idade").text()} Anos</span></h3>
+                    <p>${$(this).find("SmallDesc").text()}</p>
+                    <a href="#" class="info">Mais Informações</a>
+                </figcaption>
+            </figure>`);
         });
-    }).fail(function(){
+    }).fail(function () {
         alert("fuck");
     })
 }
@@ -46,11 +46,10 @@ const getAnimals = ()=> {
   </figcaption>
 </figure> */
 const GetBilhetes = () => {
-    $.ajax(url).done(function(xml){
-        $(xml).find("Artigo").each(function(){
+    $.ajax(url).done(function (xml) {
+        $(xml).find("Artigo").each(function () {
             console.log($(this).find("Categoria").text())
-            if($(this).find("Categoria").text() == "Bilhete")
-            {
+            if ($(this).find("Categoria").text() == "Bilhete") {
                 $("#precos").append(`<table>
                         <thead>
                             <tr>
@@ -74,9 +73,9 @@ const GetBilhetes = () => {
                         </tbody>
                     </table>`);
             }
-            
+
         });
-    }).fail(function(){
+    }).fail(function () {
         alert("fuck");
     })
 }

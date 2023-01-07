@@ -4,122 +4,150 @@
         xmlns:tns="http://www.juicers.org"
         elementFormDefault="qualified">
 
+    <complexType name="Animal">
+            <sequence>
+                <element name="Nome" type="string"></element>
+                <element name="Descricao">
+                    <simpleType>
+                        <restriction base="string">
+                            <minLength value="200"></minLength>
+                        </restriction>
+                    </simpleType>
+                </element>
+                <element name="SmallDesc">
+                    <simpleType>
+                        <restriction base="string">
+                            <maxLength value="200"></maxLength>
+                        </restriction>
+                    </simpleType>
+                </element>
+                <element name="Idade">
+                <simpleType>
+                    <restriction base="int">
+                        <maxInclusive value="200"></maxInclusive>
+                        <minExclusive value="0"></minExclusive>
+                    </restriction>
+                </simpleType>
+                </element>
+                <element name="Foto" type="anyURI"></element>
+                <element name="Especie" type="tns:Especie"></element>
+            </sequence>
+    </complexType>
+
+    <complexType name="Especie">
+        <sequence>
+            <element name="NomeEspecie" type="string"></element>
+            <element name="Tipo">
+                <simpleType>
+                    <restriction base="token">
+                        <enumeration value="Mamífero"></enumeration>
+                        <enumeration value="Peixe"></enumeration>
+                        <enumeration value="Réptil"></enumeration>
+                        <enumeration value="Ave"></enumeration>
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="SubEspecie" type="tns:SubEspecie"></element>
+        </sequence>
+    </complexType>
+
+
+    <complexType name="SubEspecie">
+        <sequence>
+            <element name="NomeSubEspecie" type="string"></element>
+            <element name="Local" type="string"></element>
+        </sequence>
+    </complexType>
+
+    <complexType name="Artigo">
+        <sequence>
+            <element name="Nome" type="string"></element>
+            <element name="Preco" type="decimal"></element>
+            <element name="Categoria">
+                <simpleType>
+                    <restriction base="token">
+                        <enumeration value="Felino"></enumeration>
+                        <enumeration value="Peixe"></enumeration>
+                        <enumeration value="Réptil"></enumeration>
+                        <enumeration value="Primata"></enumeration>
+                        <enumeration value="Ave"></enumeration>
+                        <enumeration value="Bilhete"></enumeration>
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="Quantidade">
+                <simpleType>
+                    <restriction base="int">
+                        <minExclusive value="0"></minExclusive>
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+
+    <complexType name="Funcionario">
+        <sequence>
+            <element name="Nome" type="string"></element>
+            <element name="Descricao" type="string"></element>
+            <element name="Especialidade" type="string"></element>
+        </sequence>
+    </complexType>
+
+    <complexType name="Morada">
+        <sequence>
+            <element name="Pais" type="string"></element>
+            <element name="Cidade" type="string"></element>
+            <element name="CodPostal">
+                <simpleType>
+                    <restriction base="string">
+                        <pattern value="[0-9]{4}-[0-9]{3}"></pattern>
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="AnoFund">
+                <simpleType>
+                    <restriction base="int">
+                        <minInclusive value="1900"></minInclusive>
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="QuantidadeAnimais">
+                <simpleType>
+                    <restriction base="int">
+                        <minInclusive value="1"></minInclusive>
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+
+
     <element name="Zoo">
         <complexType>
             <sequence>
-                <element name="Morada" maxOccurs="1">
-                    <complexType>
-                        <sequence>
-                            <element name="Pais" type="string"></element>
-                            <element name="Cidade" type="string"></element>
-                            <element name="CodPostal">
-                                <simpleType>
-                                    <restriction base="string">
-                                        <pattern value="[0-9]{4}-[0-9]{3}"></pattern>
-                                    </restriction>
-                                </simpleType>
-                            </element>
-                        </sequence>
-                    </complexType>
-                </element>
-                <element name="AnoFund" type="int"></element>
-                <element name="QuantidadeAnimais" type="int"></element>
+                <element name="Morada" type="tns:Morada" maxOccurs="1"></element>
                 <element name="Animais" maxOccurs="1">
                     <complexType>
                         <sequence>
-                            <element name="Animal" maxOccurs="unbounded">
-                                <complexType>
-                                    <sequence>
-                                        <element name="Especie" type="string"></element>
-                                        <element name="SubEspecie" type="string"></element>
-                                        <element name="Nome" type="string"></element>
-                                        <element name="Descricao" type="string"></element>
-                                        <element name="SmallDesc" type="string"></element>
-                                        <element name="Idade">
-                                        <simpleType>
-                                            <restriction base="int">
-                                                <maxInclusive value="200"></maxInclusive>
-                                                <minExclusive value="0"></minExclusive>
-                                            </restriction>
-                                        </simpleType>
-                                        </element>
-                                        <element name="Foto" type="anyURI"></element>
-                                    </sequence>
-                                </complexType>
-                            </element>
-                            <element name="Especie" maxOccurs="unbounded">
-                                <complexType>
-                                    <sequence>
-                                        <element name="Nome" type="string"></element>
-                                        <element name="Descricao" type="string"></element>
-                                        <element name="Local" type="string"></element>
-                                    </sequence>
-                                </complexType>
-                            </element>
-                            <element name="SubEspecie" maxOccurs="unbounded">
-                                <complexType>
-                                    <sequence>
-                                        <element name="Nome" type="string"></element>
-                                        <element name="Especie" type="string"></element>
-                                        <element name="Descricao" type="string"></element>
-                                        
-                                    </sequence>
-                                </complexType>
-                            </element>
+                            <element name="Animal" type="tns:Animal" maxOccurs="unbounded"></element>
                         </sequence>
                     </complexType>
                 </element>
                 <element name="Funcionarios" maxOccurs="1">
                     <complexType>
                         <sequence>
-                            <element name="funcionário" maxOccurs="unbounded">
-                                <complexType>
-                                    <sequence>
-                                        <element name="Nome" type="string"></element>
-                                        <element name="Descricao" type="string"></element>
-                                        <element name="Especialidade" type="string"></element>
-                                    </sequence>
-                                </complexType>
-                            </element>
+                            <element name="funcionario" type="tns:Funcionario" maxOccurs="unbounded"></element>
                         </sequence>
                     </complexType>
                 </element>
                 <element name="Loja" maxOccurs="1">
                     <complexType>
                         <sequence>
-                            <element name="Artigo" maxOccurs="unbounded">
-                                <complexType>
-                                    <sequence>
-                                        <element name="Nome" type="string"></element>
-                                        <element name="Preco" type="decimal"></element>
-                                        <element name="Categoria">
-                                            <simpleType>
-                                                <restriction base="token">
-                                                    <enumeration value="Felino"></enumeration>
-                                                    <enumeration value="Peixe"></enumeration>
-                                                    <enumeration value="Réptil"></enumeration>
-                                                    <enumeration value="Primata"></enumeration>
-                                                    <enumeration value="Ave"></enumeration>
-                                                    <enumeration value="Bilhete"></enumeration>
-                                                </restriction>
-                                            </simpleType>
-                                        </element>
-                                        <element name="Quantidade">
-                                            <simpleType>
-                                                <restriction base="int">
-                                                    <minExclusive value="0"></minExclusive>
-                                                </restriction>
-                                            </simpleType>
-                                        </element>
-                                    </sequence>
-                                </complexType>
-                            </element>
+                            <element name="Artigo" type="tns:Artigo" maxOccurs="unbounded"></element>
                         </sequence>
                     </complexType>
                 </element>
             </sequence>
-        </complexType>
-        
+        </complexType> 
     </element>
-
 </schema>

@@ -31,11 +31,13 @@ const getEspecies = () => {
         alert("Erro");
     })
 }
+
+
 const getAnimalType = () => {
     $.ajax(url).done(function (xml) {
         var distinct = [];
-        $(xml).find("Especie").each(function () {
-            if(distinct.includes($(this).find("Tipo").text()))
+        $(xml).find("Tipo").each(function () {
+            if(distinct.includes($(this).find("NomeTipoEspecie").text()))
             {
                 return;
             }
@@ -43,12 +45,13 @@ const getAnimalType = () => {
             {
             $("#subespecies").append(`
             <figure class="AnimalClass">
+            <img src="${$(this).find("ImagemTipoEspecie").text()}" class="image" alt="${$(this).find("NomeTipoEspecie").text()} Image"/>
                 <figcaption>
-                    <h2>${$(this).find("Tipo").text()}<span> Habitat: ${$(this).find("Local").text()}</span></h2>
+                    <h2>${$(this).find("NomeTipoEspecie").text()}<span> Habitat: ${$(this).find("HabitatTipoEspecie").text()}</span></h2>
                     <a href="#" class="info">Ver Mais</a>
                 </figcaption>
             </figure>`);
-            distinct.push($(this).find("Tipo").text());
+            distinct.push($(this).find("NomeTipoEspecie").text());
         }});
     }).fail(function () {
         alert("Erro");
@@ -88,4 +91,6 @@ const GetBilhetes = () => {
         alert("fuck");
     })
 }
-
+$(function() {
+    $('.carousel').carousel('cycle');
+});

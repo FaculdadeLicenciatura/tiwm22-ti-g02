@@ -19,7 +19,13 @@
             <Foto>https://ichef.bbci.co.uk/news/976/cpsprodpb/D2D2/production/_118707935_untitled-1.jpg</Foto>
             <Especie>
                 <NomeEspecie>Gorila</NomeEspecie>
-                <Tipo>Mamífero</Tipo>
+                <Tipo>
+                    <NomeTipoEspecie>Mamíferos</NomeTipoEspecie>
+                    <HabitatTipoEspecie>Mato Grosso</HabitatTipoEspecie>
+                    <ImagemTipoEspecie>https://socientifica.com.br/wp-content/uploads/2022/07/mamiferos.jpg</ImagemTipoEspecie>
+                </Tipo>
+                <InfoEspecie></InfoEspecie>
+                <ImagemEspecie></ImagemEspecie>
                 <SubEspecie>
                         <NomeSubEspecie>Africano</NomeSubEspecie>
                         <Local>Africa</Local>
@@ -35,7 +41,13 @@
             <Foto>https://www.infoescola.com/wp-content/uploads/2017/04/leao-126767138.jpg</Foto>
             <Especie>
                 <NomeEspecie>Leão</NomeEspecie>
-                <Tipo>Mamífero</Tipo>
+                <Tipo>
+                    <NomeTipoEspecie>Mamíferos</NomeTipoEspecie>
+                    <HabitatTipoEspecie>Mato Grosso</HabitatTipoEspecie>
+                    <ImagemTipoEspecie>https://socientifica.com.br/wp-content/uploads/2022/07/mamiferos.jpg</ImagemTipoEspecie>
+                </Tipo>
+                <InfoEspecie></InfoEspecie>
+                <ImagemEspecie></ImagemEspecie>
                 <SubEspecie>
                     <NomeSubEspecie>Africano</NomeSubEspecie>
                     <Local>Selva</Local>
@@ -52,7 +64,13 @@
             <Foto>https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Meerkat_feb_09.jpg/1200px-Meerkat_feb_09.jpg</Foto>
             <Especie>
                 <NomeEspecie>Suricata</NomeEspecie>
-                <Tipo>Mamífero</Tipo>
+                <Tipo>
+                    <NomeTipoEspecie>Mamíferos</NomeTipoEspecie>
+                    <HabitatTipoEspecie>Mato Grosso</HabitatTipoEspecie>
+                    <ImagemTipoEspecie>https://socientifica.com.br/wp-content/uploads/2022/07/mamiferos.jpg</ImagemTipoEspecie>
+                </Tipo>
+                <InfoEspecie></InfoEspecie>
+                <ImagemEspecie></ImagemEspecie>
                 <SubEspecie>
                     <NomeSubEspecie>Africano</NomeSubEspecie>
                     <Local>Floresta</Local>
@@ -69,7 +87,13 @@
             <Foto>https://upload.wikimedia.org/wikipedia/commons/0/01/Tarangire_Warzenschwein1.jpg</Foto>
             <Especie>
                 <NomeEspecie>Javali</NomeEspecie>
-                <Tipo>Mamífero</Tipo>
+                <Tipo>
+                    <NomeTipoEspecie>Mamíferos</NomeTipoEspecie>
+                    <HabitatTipoEspecie>Mato Grosso</HabitatTipoEspecie>
+                    <ImagemTipoEspecie>https://socientifica.com.br/wp-content/uploads/2022/07/mamiferos.jpg</ImagemTipoEspecie>
+                </Tipo>
+                <InfoEspecie></InfoEspecie>
+                <ImagemEspecie></ImagemEspecie>
                 <SubEspecie>
                     <NomeSubEspecie>Africano</NomeSubEspecie>
                     <Local>Africa</Local>
@@ -89,7 +113,13 @@
             <Foto>https://www.wilder.pt/wp-content/uploads/2022/06/1280px-Cervus_elaphus_Luc_Viatour_6.jpg</Foto>
             <Especie>
                 <NomeEspecie>Veado</NomeEspecie>
-                <Tipo>Mamífero</Tipo>
+                <Tipo>
+                    <NomeTipoEspecie>Mamíferos</NomeTipoEspecie>
+                    <HabitatTipoEspecie>Mato Grosso</HabitatTipoEspecie>
+                    <ImagemTipoEspecie>https://socientifica.com.br/wp-content/uploads/2022/07/mamiferos.jpg</ImagemTipoEspecie>
+                </Tipo>
+                <InfoEspecie></InfoEspecie>
+                <ImagemEspecie></ImagemEspecie>
                 <SubEspecie>
                     <NomeSubEspecie>Vermelho</NomeSubEspecie>
                     <Local>Mar</Local>
@@ -109,7 +139,13 @@
             <Foto>https://caracolga.pt/wp-content/uploads/2019/01/elefante.jpg</Foto>
             <Especie>
                 <NomeEspecie>Elefante</NomeEspecie>
-                <Tipo>Mamífero</Tipo>
+                <Tipo>
+                    <NomeTipoEspecie>Mamíferos</NomeTipoEspecie>
+                    <HabitatTipoEspecie>Mato Grosso</HabitatTipoEspecie>
+                    <ImagemTipoEspecie>https://socientifica.com.br/wp-content/uploads/2022/07/mamiferos.jpg</ImagemTipoEspecie>
+                </Tipo>
+                <InfoEspecie></InfoEspecie>
+                <ImagemEspecie></ImagemEspecie>
                 <SubEspecie>
                     <NomeSubEspecie>Africano</NomeSubEspecie>
                     <Local>Mar</Local>
@@ -130,7 +166,13 @@
             <Foto>https://guiaanimal.net/uploads/content/image/69019/AdobeStock_326500445.jpeg</Foto>
             <Especie>
                 <NomeEspecie>Cavalo</NomeEspecie>
-                <Tipo>Mamífero</Tipo>
+                <Tipo>
+                    <NomeTipoEspecie>Mamíferos</NomeTipoEspecie>
+                    <HabitatTipoEspecie>Mato Grosso</HabitatTipoEspecie>
+                    <ImagemTipoEspecie>https://socientifica.com.br/wp-content/uploads/2022/07/mamiferos.jpg</ImagemTipoEspecie>
+                </Tipo>
+                <InfoEspecie></InfoEspecie>
+                <ImagemEspecie></ImagemEspecie>
                 <SubEspecie>
                     <NomeSubEspecie>Mustangue</NomeSubEspecie>
                     <Local>América, Europa</Local>
@@ -151,7 +193,13 @@
             <Foto>https://www.oceanario.pt/content/img/peixe_palhao_pedro_a._pina.jpg</Foto>
             <Especie>
                 <NomeEspecie>Peixe</NomeEspecie>
-                <Tipo>Peixe</Tipo>
+                <Tipo>
+                    <NomeTipoEspecie>Peixes</NomeTipoEspecie>
+                    <HabitatTipoEspecie>Mar Grosso</HabitatTipoEspecie>
+                    <ImagemTipoEspecie>https://img.freepik.com/vetores-gratis/conjunto-de-peixes-para-ilustracao-de-animais-de-aquario-mar-e-rio_1284-51564.jpg</ImagemTipoEspecie>
+                </Tipo>
+                <InfoEspecie></InfoEspecie>
+                <ImagemEspecie></ImagemEspecie>
                 <SubEspecie>
                     <NomeSubEspecie>Palhaço</NomeSubEspecie>
                     <Local>Mar</Local>
@@ -169,7 +217,13 @@
             <Foto>https://bordalo.observador.pt/v2/q:84/rs:fill:2000:1126/c:2000:1126:nowe:0:104/plain/https://s3.observador.pt/wp-content/uploads/2017/01/23132545/76895950.jpg</Foto>
             <Especie>
                 <NomeEspecie>Urso</NomeEspecie>
-                <Tipo>Mamífero</Tipo>
+                <Tipo>
+                    <NomeTipoEspecie>Mamíferos</NomeTipoEspecie>
+                    <HabitatTipoEspecie>Mato Grosso</HabitatTipoEspecie>
+                    <ImagemTipoEspecie>https://socientifica.com.br/wp-content/uploads/2022/07/mamiferos.jpg</ImagemTipoEspecie>
+                </Tipo>
+                <InfoEspecie></InfoEspecie>
+                <ImagemEspecie></ImagemEspecie>
                 <SubEspecie>
                     <NomeSubEspecie>Panda</NomeSubEspecie>
                     <Local>Ásia</Local>
@@ -190,7 +244,13 @@
             <Foto>https://imagens.mdig.com.br/bichos/monotremado_ornitorrinco.jpg</Foto>
             <Especie>
                 <NomeEspecie>Ornitorrinco</NomeEspecie>
-                <Tipo>Mamífero</Tipo>
+                <Tipo>
+                    <NomeTipoEspecie>Mamíferos</NomeTipoEspecie>
+                    <HabitatTipoEspecie>Mato Grosso</HabitatTipoEspecie>
+                    <ImagemTipoEspecie>https://socientifica.com.br/wp-content/uploads/2022/07/mamiferos.jpg</ImagemTipoEspecie>
+                </Tipo>
+                <InfoEspecie></InfoEspecie>
+                <ImagemEspecie></ImagemEspecie>
                 <SubEspecie>
                     <NomeSubEspecie>Pato</NomeSubEspecie>
                     <Local>Europa</Local>
@@ -219,19 +279,19 @@
         <Artigo>
             <Nome>Pluxe Leão</Nome>
             <Preco>20.00</Preco>
-            <Categoria>Felino</Categoria>
+            <Categoria>Artigo</Categoria>
             <Quantidade>30</Quantidade>
         </Artigo>
         <Artigo>
             <Nome>Pluxe Nemo</Nome>
             <Preco>20.00</Preco>
-            <Categoria>Peixe</Categoria>
+            <Categoria>Artigo</Categoria>
             <Quantidade>20</Quantidade>
         </Artigo>
         <Artigo>
             <Nome>Pluxe Tigre</Nome>
             <Preco>20.00</Preco>
-            <Categoria>Felino</Categoria>
+            <Categoria>Artigo</Categoria>
             <Quantidade>50</Quantidade>
         </Artigo>
         <Artigo>

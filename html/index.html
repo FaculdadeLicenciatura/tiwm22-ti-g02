@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Zoo Planet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Duru+Sans|Actor' rel='stylesheet' type='text/css'>
+    <link href="../css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <section class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><span class="magenta">AHG</span> ZOO</a>
+        </div>
+        <label>
+          <input type="checkbox">
+          <span class="menu"> <span class="hamburger"></span> </span>
+          <ul>
+            <li> <a href="#">Home</a> </li>
+            <li> <a href="#">About</a> </li>
+            <li> <a href="#">Contact</a> </li>
+          </ul>
+          </label>
+        <nav role="navigation" class="collapse navbar-collapse navbar-right">
+          <ul class="navbar-nav nav">
+            <li class="dropdown">
+              <a data-toggle="dropdown" href="#" class="dropdown-toggle">Animais <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Mamiferos</a></li>
+                <li class="active"><a href="#">Peixes</a></li>
+                <li><a href="#">Repteis</a></li>
+                <li class="active"><a href="#">Aves</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Todos os Animais</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        
+      </section>
+    </header>
+    <section class="jumbotron">
+      <figure id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <article class="carousel-inner">
+          <section class="item active">
+            <img src="../img/carousel1.jpg" alt="">
+            <div class="carousel-caption">
+            </div>
+          </section>
+          <section class="item">
+            <img src="../img/carousel2.jpg" alt="">
+            <div class="carousel-caption">
+            </div>
+          </section>
+          <section class="item">
+            <img src="../img/carousel3.jpg" alt="">
+            <div class="carousel-caption">
+            </div>
+          </section>
+        </article>
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </figure>
+    </section>
+    <h3 class="text-center">Tipo de Animais que podes encontrar no nosso ZOO</h3>
+
+ 
+      <section id="subespecies">
+              
+      </section>
+
+    <footer class="footer text-center">
+        <p>&copy; 2023 AHG ZOO. Todos os direitos NÃO reservados. Criado por: Alexandre Viana | Henrique Gomes | Gonçalo Emanuel dos Santos Filipe Almeida Garrido</p>
+    </footer>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootshape.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+  <script type = "text/javascript">  
+    getAnimals()
+    GetBilhetes()
+    getEspecies()
+    getAnimalType()
+    </script> 
+</html>

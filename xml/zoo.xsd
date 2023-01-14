@@ -37,16 +37,10 @@
     <complexType name="Especie">
         <sequence>
             <element name="NomeEspecie" type="string"></element>
-            <element name="Tipo">
-                <simpleType>
-                    <restriction base="token">
-                        <enumeration value="Mamífero"></enumeration>
-                        <enumeration value="Peixe"></enumeration>
-                        <enumeration value="Réptil"></enumeration>
-                        <enumeration value="Ave"></enumeration>
-                    </restriction>
-                </simpleType>
-            </element>
+            <element name="Tipo" type="tns:TipoEspecie">
+        </element>
+            <element name="InfoEspecie" type="string"></element>
+            <element name="ImagemEspecie" type="string"></element>
             <element name="SubEspecie" type="tns:SubEspecie"></element>
         </sequence>
     </complexType>
@@ -58,7 +52,22 @@
             <element name="Local" type="string"></element>
         </sequence>
     </complexType>
-
+    <complexType name="TipoEspecie">
+        <sequence>
+            <element name="NomeTipoEspecie">
+                <simpleType>
+                    <restriction base="token">
+                        <enumeration value="Mamíferos"></enumeration>
+                        <enumeration value="Peixes"></enumeration>
+                        <enumeration value="Répteis"></enumeration>
+                        <enumeration value="Aves"></enumeration>
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="HabitatTipoEspecie" type="string"></element>
+            <element name="ImagemTipoEspecie" type="anyURI"></element>
+        </sequence>
+    </complexType>
     <complexType name="Artigo">
         <sequence>
             <element name="Nome" type="string"></element>
@@ -66,11 +75,7 @@
             <element name="Categoria">
                 <simpleType>
                     <restriction base="token">
-                        <enumeration value="Felino"></enumeration>
-                        <enumeration value="Peixe"></enumeration>
-                        <enumeration value="Réptil"></enumeration>
-                        <enumeration value="Primata"></enumeration>
-                        <enumeration value="Ave"></enumeration>
+                        <enumeration value="Artigo"></enumeration>
                         <enumeration value="Bilhete"></enumeration>
                     </restriction>
                 </simpleType>

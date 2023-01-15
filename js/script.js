@@ -36,7 +36,7 @@ const getAnimalsByType = () => {
                     <figcaption class="AnimalFigCaption">
                         <h2>${$(this).find("Nome").text()}<span>${$(this).find("NomeEspecie").text()} ${$(this).find("NomeSubEspecie").text()}</span></h2><h3><span class="customAge">${$(this).find("Idade").text()} Anos</span></h3>
                         <p>${$(this).find("SmallDesc").text()}</p>
-                        <a href="#" class="info">Mais Informações</a>
+                        <a href="./animal-details.html?Nome=${$(this).find("Nome").text()}" class="info">Mais Informações</a>
                     </figcaption>
                 </figure>`);
             }

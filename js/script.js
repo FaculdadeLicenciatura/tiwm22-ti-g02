@@ -140,7 +140,7 @@ const getEspecieDetail = () => {
                         <section class="featured-media">
                         <section class="image-container">
                             <!--alterar-->
-                            <img class="image"
+                            <img class="img-thumbnail image-rei"
                             src="${$(this).find("Foto").text()}">
                         </section>
                         </section>

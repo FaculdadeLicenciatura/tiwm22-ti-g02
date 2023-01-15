@@ -1,4 +1,9 @@
 let url = "../xml/zoo.xml";
+
+$(function() {
+    $('.carousel').carousel('cycle');
+});
+
 const getAnimals = () => {
     $.ajax(url).done(function (xml) {
         $(xml).find("Animal").each(function () {

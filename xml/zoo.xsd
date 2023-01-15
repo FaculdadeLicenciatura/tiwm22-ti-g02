@@ -66,6 +66,8 @@
             </element>
             <element name="HabitatTipoEspecie" type="string"></element>
             <element name="ImagemTipoEspecie" type="anyURI"></element>
+            <element name="SmallDescTipoEspecie" type="string"></element>
+            <element name="DescTipoEspecie" type="string"></element>
         </sequence>
     </complexType>
     <complexType name="Artigo">

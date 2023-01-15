@@ -25,6 +25,8 @@ const getAnimals = () => {
 const getAnimalsByType = () => {
     $.ajax(url).done(function (xml) {
         var getAnimalType = window.location.href.split('=')[1];
+        $("#animais").append(`
+        <h2 id="pageTitle">A nossa familia de ${getAnimalType} </h2>`)
         $(xml).find("Animal").each(function () {
             if($(this).find("NomeTipoEspecie").text() == getAnimalType || getAnimalType == "Todos")
             {
@@ -76,7 +78,8 @@ const getAnimalType = () => {
             <img src="${$(this).find("ImagemTipoEspecie").text()}" class="image" alt="${$(this).find("NomeTipoEspecie").text()} Image"/>
                 <figcaption>
                     <h2>${$(this).find("NomeTipoEspecie").text()}<span> Habitat: ${$(this).find("HabitatTipoEspecie").text()}</span></h2>
-                    <a href="#" class="info">Ver Mais</a>
+                    <p>${$(this).find("SmallDescTipoEspecie").text()}</p>
+                    <a href="/html/animals.html?tipo=${$(this).find("NomeTipoEspecie").text()}" class="info">Ver Mais</a>
                 </figcaption>
             </figure>`);
             distinct.push($(this).find("NomeTipoEspecie").text());

@@ -3564,17 +3564,17 @@ input[type="button"].btn-block {
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-  color: #262626;
+  color: #ffffff;
   text-decoration: none;
-  background-color: #b4dbb9;
+  background-color: #BB2649;
 }
 
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
-  color: #555555;
+  color: #ffffff;
   text-decoration: none;
-  background-color: #9ed0a4;
+  background-color: #BB2649;
   outline: 0;
 }
 
@@ -4761,14 +4761,14 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #9ed0a4;
+  border-color: #BB2649;
 }
 
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  color: #555555;
-  background-color: #9ed0a4;
+  color: #ffffff;
+  background-color: #BB2649;
 }
 
 @media (max-width: 767px) {

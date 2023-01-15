@@ -36,9 +36,10 @@ body {
   bottom: 0;
   position:relative;
 }
-.pageTitle{
+#pageTitle{
   text-align: center;
   color: #BB2649;
+  width: 100%;
 }
 #subespecies{
   list-style: none;
@@ -104,11 +105,11 @@ body {
 }
 .AnimalClass figcaption a {
   padding: 5px;
-  border: 1px solid #ffffff;
+  border: 2px solid #BB2649;
   color: #ffffff;
   font-size: 0.55em;
   text-transform: uppercase;
-  margin: 10px 0;
+  margin: 0 auto;
   display: inline-block;
   opacity: 0.65;
   width: 47%;
@@ -116,6 +117,9 @@ body {
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 1px;
+  bottom: 0;
+  margin-bottom: 20px;
+  position: absolute;
 }
 .AnimalClass figcaption a:hover {
   opacity: 1;

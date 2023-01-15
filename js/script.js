@@ -125,3 +125,46 @@ const GetBilhetes = () => {
 $(function() {
     $('.carousel').carousel('cycle');
 });
+
+const getEspecieDetail = () => {
+    $.ajax(url).done(function (xml) {
+        var getAnimalType = window.location.href.split('=')[1];
+        $(xml).find("Animal").each(function () {
+            if($(this).find("Nome").text() == getAnimalType || getAnimalType == "Todos")
+            {
+                $("#sectiondetails").append(`
+                
+
+                <section class="col-md-6 ">
+                    <article class="post-wrap col-sm-12">
+                        <section class="featured-media">
+                        <section class="image-container">
+                            <!--alterar-->
+                            <img class="image"
+                            src="${$(this).find("Foto").text()}">
+                        </section>
+                        </section>
+                        <h1 class="title">${$(this).find("NomeEspecie").text()}</h1>
+                        <section class="post-entry">
+                        <p>${$(this).find("Descricao").text()}</p>
+                        </section>
+                    </article>
+                    </section>
+                    <section class="col-md-6">
+                    <article class="sppb-addon-content">
+                        <p><strong>Descrição Pequena</strong><br> <em>${$(this).find("SmallDesc").text()}</em></p>
+                        <p><strong>Nome do Tipo de Especie<br></strong>${$(this).find("NomeTipoEspecie").text()}</p>
+                        <p><strong>Habitat <br></strong>${$(this).find("HabitatTipoEspecie").text()}</p>
+                        <p><strong>Info da Especie<br></strong>${$(this).find("InfoEspecie").text()}</p>
+                        <p><strong>Local<br></strong>${$(this).find("Local").text()}</p>
+                        <p><strong>Idade<br></strong>${$(this).find("Idade").text()} Anos</p>
+                        <p>&nbsp;</p>
+                    </article>
+                </section>
+                `);
+            }
+        })
+    }).fail(function () {
+        alert("Erro lol");
+    })
+}

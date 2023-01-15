@@ -34,7 +34,6 @@ const getAnimalsByType = () => {
                 </figure>`);
             }
         })
-        $("#animais").append(`</article>`);
     }).fail(function () {
         alert("Erro");
     })

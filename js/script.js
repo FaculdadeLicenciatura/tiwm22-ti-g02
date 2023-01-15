@@ -16,6 +16,30 @@ const getAnimals = () => {
         alert("Erro");
     })
 }
+
+const getAnimalsByType = () => {
+    $.ajax(url).done(function (xml) {
+        var getAnimalType = window.location.href.split('=')[1];
+        $(xml).find("Animal").each(function () {
+            if($(this).find("NomeTipoEspecie").text() == getAnimalType || getAnimalType == "Todos")
+            {
+                $("#animais").append(`
+                <figure class="AnimalClass">
+                    <img src="${$(this).find("Foto").text()}" class="image" alt="${$(this).find("Nome").text()} Image"/>
+                    <figcaption class="AnimalFigCaption">
+                        <h2>${$(this).find("Nome").text()}<span>${$(this).find("NomeEspecie").text()} ${$(this).find("NomeSubEspecie").text()}</span></h2><h3><span class="customAge">${$(this).find("Idade").text()} Anos</span></h3>
+                        <p>${$(this).find("SmallDesc").text()}</p>
+                        <a href="#" class="info">Mais Informações</a>
+                    </figcaption>
+                </figure>`);
+            }
+        })
+        $("#animais").append(`</article>`);
+    }).fail(function () {
+        alert("Erro");
+    })
+}
+
 const getEspecies = () => {
     $.ajax(url).done(function (xml) {
         $(xml).find("Especie").each(function () {

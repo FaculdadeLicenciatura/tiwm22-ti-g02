@@ -57,9 +57,9 @@
             <element name="NomeTipoEspecie">
                 <simpleType>
                     <restriction base="token">
-                        <enumeration value="Mamíferos"></enumeration>
+                        <enumeration value="Mamiferos"></enumeration>
                         <enumeration value="Peixes"></enumeration>
-                        <enumeration value="Répteis"></enumeration>
+                        <enumeration value="Repteis"></enumeration>
                         <enumeration value="Aves"></enumeration>
                     </restriction>
                 </simpleType>

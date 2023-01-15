@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Duru+Sans|Actor' rel='stylesheet' type='text/css'>
+    <link href="../css/style.css" rel="stylesheet">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootshape.js"></script>
+    <script src="../js/script.js"></script>
+    <title>Zoo Planet Animals</title>
+</head>
+<body>
+    <header class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <section class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="./index.html"><span class="magenta">AHG</span> ZOO</a>
+          </div>
+          <label>
+            <input type="checkbox">
+            <span class="menu"> <span class="hamburger"></span> </span>
+            <ul>
+              <li> <a href="#">Home</a> </li>
+              <li> <a href="#">About</a> </li>
+              <li> <a href="#">Contact</a> </li>
+            </ul>
+            </label>
+          <nav role="navigation" class="collapse navbar-collapse navbar-right">
+            <ul class="navbar-nav nav">
+              <li class="dropdown">
+                <a data-toggle="dropdown" href="#" class="dropdown-toggle">Animais <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="./animals.html?tipo=Mamiferos">Mamiferos</a></li>
+                  <li><a href="./animals.html?tipo=Peixes">Peixes</a></li>
+                  <li><a href="./animals.html?tipo=Repteis">Repteis</a></li>
+                  <li><a href="./animals.html?tipo=Aves">Aves</a></li>
+                  <li class="divider"></li>
+                  <li><a href="./animals.html?tipo=Todos">Todos os Animais</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          
+        </section>
+      </header>
+      <h2 class="pageTitle">A nossa familia</h2>
+      <section id="animais">
+      </section>
+      <script type = "text/javascript">  
+        getAnimalsByType();
+        </script> 
+</body>
+</html>

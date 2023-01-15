@@ -20,7 +20,7 @@
             <Especie>
                 <NomeEspecie>Gorila</NomeEspecie>
                 <Tipo>
-                    <NomeTipoEspecie>Mamíferos</NomeTipoEspecie>
+                    <NomeTipoEspecie>Mamiferos</NomeTipoEspecie>
                     <HabitatTipoEspecie>Mato Grosso</HabitatTipoEspecie>
                     <ImagemTipoEspecie>https://socientifica.com.br/wp-content/uploads/2022/07/mamiferos.jpg</ImagemTipoEspecie>
                 </Tipo>
@@ -42,7 +42,7 @@
             <Especie>
                 <NomeEspecie>Leão</NomeEspecie>
                 <Tipo>
-                    <NomeTipoEspecie>Mamíferos</NomeTipoEspecie>
+                    <NomeTipoEspecie>Mamiferos</NomeTipoEspecie>
                     <HabitatTipoEspecie>Mato Grosso</HabitatTipoEspecie>
                     <ImagemTipoEspecie>https://socientifica.com.br/wp-content/uploads/2022/07/mamiferos.jpg</ImagemTipoEspecie>
                 </Tipo>
@@ -65,7 +65,7 @@
             <Especie>
                 <NomeEspecie>Suricata</NomeEspecie>
                 <Tipo>
-                    <NomeTipoEspecie>Mamíferos</NomeTipoEspecie>
+                    <NomeTipoEspecie>Mamiferos</NomeTipoEspecie>
                     <HabitatTipoEspecie>Mato Grosso</HabitatTipoEspecie>
                     <ImagemTipoEspecie>https://socientifica.com.br/wp-content/uploads/2022/07/mamiferos.jpg</ImagemTipoEspecie>
                 </Tipo>
@@ -88,7 +88,7 @@
             <Especie>
                 <NomeEspecie>Javali</NomeEspecie>
                 <Tipo>
-                    <NomeTipoEspecie>Mamíferos</NomeTipoEspecie>
+                    <NomeTipoEspecie>Mamiferos</NomeTipoEspecie>
                     <HabitatTipoEspecie>Mato Grosso</HabitatTipoEspecie>
                     <ImagemTipoEspecie>https://socientifica.com.br/wp-content/uploads/2022/07/mamiferos.jpg</ImagemTipoEspecie>
                 </Tipo>
@@ -114,7 +114,7 @@
             <Especie>
                 <NomeEspecie>Veado</NomeEspecie>
                 <Tipo>
-                    <NomeTipoEspecie>Mamíferos</NomeTipoEspecie>
+                    <NomeTipoEspecie>Mamiferos</NomeTipoEspecie>
                     <HabitatTipoEspecie>Mato Grosso</HabitatTipoEspecie>
                     <ImagemTipoEspecie>https://socientifica.com.br/wp-content/uploads/2022/07/mamiferos.jpg</ImagemTipoEspecie>
                 </Tipo>
@@ -140,7 +140,7 @@
             <Especie>
                 <NomeEspecie>Elefante</NomeEspecie>
                 <Tipo>
-                    <NomeTipoEspecie>Mamíferos</NomeTipoEspecie>
+                    <NomeTipoEspecie>Mamiferos</NomeTipoEspecie>
                     <HabitatTipoEspecie>Mato Grosso</HabitatTipoEspecie>
                     <ImagemTipoEspecie>https://socientifica.com.br/wp-content/uploads/2022/07/mamiferos.jpg</ImagemTipoEspecie>
                 </Tipo>
@@ -167,7 +167,7 @@
             <Especie>
                 <NomeEspecie>Cavalo</NomeEspecie>
                 <Tipo>
-                    <NomeTipoEspecie>Mamíferos</NomeTipoEspecie>
+                    <NomeTipoEspecie>Mamiferos</NomeTipoEspecie>
                     <HabitatTipoEspecie>Mato Grosso</HabitatTipoEspecie>
                     <ImagemTipoEspecie>https://socientifica.com.br/wp-content/uploads/2022/07/mamiferos.jpg</ImagemTipoEspecie>
                 </Tipo>
@@ -207,6 +207,33 @@
             </Especie>
         </Animal>
         <Animal>
+            <Nome>Dory</Nome>
+            <Descricao>Este pequeno animal tem cerca de 31 centímetros de comprimento e chega a pesar mais de meio quilo. Possui corpo achatado e pele composta
+                 principalmente de iridióforos, que são estruturas projetadas para dar brilho aos tons de sua epiderme.
+                A cor característica da espécie é um azul profundo, abrangendo a maior parte de seu corpo oval. Possui também algumas
+                 linhas com coloração preta, que começam nos olhos, ocupando parte da região superior do peixe, e terminam nas bordas da cauda.
+                  Além disso, nesta mesma seção do corpo, possui uma mancha azul, que confere ao peixe sua aparência particular.
+                Quanto à cauda, é de cor amarelo fosforescente, que se estende em forma de “V”, com margens escuras. Em sua base,
+                 possui um espinho inserido. Além disso, suas barbatanas peitorais têm a mesma cor, apenas em tamanho menor.</Descricao>
+            <SmallDesc>Também estou perdido</SmallDesc>
+            <Idade>7</Idade>
+            <Foto>https://catracalivre.com.br/wp-content/uploads/sites/11/2017/01/IMG_0035.jpg</Foto>
+            <Especie>
+                <NomeEspecie>cirurgião-patela</NomeEspecie>
+                <Tipo>
+                    <NomeTipoEspecie>Peixes</NomeTipoEspecie>
+                    <HabitatTipoEspecie>Mar Grosso</HabitatTipoEspecie>
+                    <ImagemTipoEspecie>https://img.freepik.com/vetores-gratis/conjunto-de-peixes-para-ilustracao-de-animais-de-aquario-mar-e-rio_1284-51564.jpg</ImagemTipoEspecie>
+                </Tipo>
+                <InfoEspecie></InfoEspecie>
+                <ImagemEspecie></ImagemEspecie>
+                <SubEspecie>
+                    <NomeSubEspecie></NomeSubEspecie>
+                    <Local>Mar</Local>
+                </SubEspecie>
+            </Especie>
+        </Animal>
+        <Animal>
             <Nome>Pô</Nome>
             <Descricao>O panda-gigante é um mamífero de cor preto e branco que come bambu (folhas). A pelagem é grossa e lanosa
                 para suportar as baixas temperaturas no ambiente subalpino em que vive. As manchas oculares, membros, orelhas
@@ -218,7 +245,7 @@
             <Especie>
                 <NomeEspecie>Urso</NomeEspecie>
                 <Tipo>
-                    <NomeTipoEspecie>Mamíferos</NomeTipoEspecie>
+                    <NomeTipoEspecie>Mamiferos</NomeTipoEspecie>
                     <HabitatTipoEspecie>Mato Grosso</HabitatTipoEspecie>
                     <ImagemTipoEspecie>https://socientifica.com.br/wp-content/uploads/2022/07/mamiferos.jpg</ImagemTipoEspecie>
                 </Tipo>
@@ -245,7 +272,7 @@
             <Especie>
                 <NomeEspecie>Ornitorrinco</NomeEspecie>
                 <Tipo>
-                    <NomeTipoEspecie>Mamíferos</NomeTipoEspecie>
+                    <NomeTipoEspecie>Mamiferos</NomeTipoEspecie>
                     <HabitatTipoEspecie>Mato Grosso</HabitatTipoEspecie>
                     <ImagemTipoEspecie>https://socientifica.com.br/wp-content/uploads/2022/07/mamiferos.jpg</ImagemTipoEspecie>
                 </Tipo>
@@ -254,6 +281,109 @@
                 <SubEspecie>
                     <NomeSubEspecie>Pato</NomeSubEspecie>
                     <Local>Europa</Local>
+                </SubEspecie>
+            </Especie>
+        </Animal>
+        <Animal>
+            <Nome>Kaa</Nome>
+            <Descricao>Anaconda gigante é um termo usado para se referir a uma suposta existência das cobras anacondas com tamanhos maiores do que os normais. A lenda ou crença é baseada em relatos que datam da colonização 
+                europeia da América do Sul, quando avistamentos de anacondas gigantes começaram a 
+                circular entre os colonos. O tamanho das maiores anacondas tem sido objeto de debate desde então entre criptozoologistas e zoólogos.
+                Verificou-se que as anacondas crescem para tamanhos de 5,5 metros e 100 quilos.Em particular, a anaconda verde ou comum é a mais pesada e a maior entre
+                 todas as cobras existentes em termos de robustez, e é também a segunda mais longa.
+                Enquanto a mais comprida e confirmada anaconda foi de aproximadamente 5,5 m de comprimento, comprimentos muito acima disso foram relatados
+                 para esta espécie, sem verificação. Algumas reivindicações descrevem anacondas que variam de 8 a 12 m, embora estas permaneçam não verificadas.</Descricao>
+            <SmallDesc>Grande como o caraças come um javali inteirinho </SmallDesc>
+            <Idade>10</Idade>
+            <Foto>https://i.natgeofe.com/n/f09b5c7c-511b-4ef0-8c70-df2cf86549da/green-anaconda_thumb.jpg</Foto>
+            <Especie>
+                <NomeEspecie>Anaconda</NomeEspecie>
+                <Tipo>
+                    <NomeTipoEspecie>Repteis</NomeTipoEspecie>
+                    <HabitatTipoEspecie>Mato Grosso</HabitatTipoEspecie>
+                    <ImagemTipoEspecie>https://socientifica.com.br/wp-content/uploads/2022/07/mamiferos.jpg</ImagemTipoEspecie>
+                </Tipo>
+                <InfoEspecie></InfoEspecie>
+                <ImagemEspecie></ImagemEspecie>
+                <SubEspecie>
+                    <NomeSubEspecie>Gigante</NomeSubEspecie>
+                    <Local>Brasil</Local>
+                </SubEspecie>
+            </Especie>
+        </Animal>
+        <Animal>
+            <Nome>Oogway</Nome>
+            <Descricao>As tartarugas-gigante que existem hoje em dia são características de habitats insulares da região tropical.
+                 O registo fóssil, no entanto, mostra que já foram comuns nos continentes, em particular na Ásia. 
+                 As tartarugas-gigante têm dimensões variáveis, de espécie para espécie. As maiores atingem 300 kg de peso e 1.3 metros de comprimento.
+                 A maior população de tartarugas-gigante encontra-se no atol de Aldabra, no oceano Índico, com cerca de 100.000 exemplares de tartaruga-gigante-de-aldabra
+                  (Geochelone gigantea).</Descricao>
+            <SmallDesc>Muita sabedoria para escolher o guerreiro dragão </SmallDesc>
+            <Idade>20</Idade>
+            <Foto>https://www.pensamentoverde.com.br/wp-content/uploads/2018/02/tartaruga-gigante.jpg</Foto>
+            <Especie>
+                <NomeEspecie>Tartaruga</NomeEspecie>
+                <Tipo>
+                    <NomeTipoEspecie>Repteis</NomeTipoEspecie>
+                    <HabitatTipoEspecie>Mato Grosso</HabitatTipoEspecie>
+                    <ImagemTipoEspecie>https://socientifica.com.br/wp-content/uploads/2022/07/mamiferos.jpg</ImagemTipoEspecie>
+                </Tipo>
+                <InfoEspecie></InfoEspecie>
+                <ImagemEspecie></ImagemEspecie>
+                <SubEspecie>
+                    <NomeSubEspecie>Gigante</NomeSubEspecie>
+                    <Local>Brasil</Local>
+                </SubEspecie>
+            </Especie>
+        </Animal>
+        <Animal>
+            <Nome>Blue</Nome>
+            <Descricao>A arara-azul, também conhecida como arara-azul-grande, pertence à espécie Anodorhynchus hyacinthinus. Possui coloração predominantemente azul-cobalto,
+                 com regiões em amarelo ao redor dos olhos e na mandíbula inferior. Apresenta a pele em volta da mandíbula na forma de fita.
+                 Essa é uma ave de grande porte com cerca de 1,0 m de comprimento da cabeça à cauda e 1,20 m de envergadura, pesando, aproximadamente, 1,3 kg.</Descricao>
+            <SmallDesc>Tenho asas mas não sei voar</SmallDesc>
+            <Idade>6</Idade>
+            <Foto>https://websitly.com/sites/default/files/produtos/foto-projeto-arara-azul.jpg</Foto>
+            <Especie>
+                <NomeEspecie>Arara</NomeEspecie>
+                <Tipo>
+                    <NomeTipoEspecie>Aves</NomeTipoEspecie>
+                    <HabitatTipoEspecie>Ar Grosso</HabitatTipoEspecie>
+                    <ImagemTipoEspecie>https://socientifica.com.br/wp-content/uploads/2022/07/mamiferos.jpg</ImagemTipoEspecie>
+                </Tipo>
+                <InfoEspecie></InfoEspecie>
+                <ImagemEspecie></ImagemEspecie>
+                <SubEspecie>
+                    <NomeSubEspecie>azul-gigante</NomeSubEspecie>
+                    <Local>Brasil</Local>
+                </SubEspecie>
+            </Especie>
+        </Animal>
+        <Animal>
+            <Nome>Zazu</Nome>
+            <Descricao>Este calau tem entre 42 a 50 cm de comprimento, sendo os machos um pouco maiores que as fêmeas. A sua plumagem tem um padrão complexo de branco e negro: 
+                face, pescoço, garganta e zona ventral são brancas, enquanto que o dorso,
+                cauda, crista e parte posterior do pescoço são pretos. As asas são sobretudo negras, com manchas brancas. A sua característica mais típica é o bico longo,
+                ligeiramente encurvado e vermelho vivo.
+
+                O calau-de-bico-vermelho tem uma alimentação à base de insectos e outros invertebrados, 
+                suplementada com sementes e ovos de pequenas aves, principalmente tecelões. É uma ave gregária, que vive em pequenos bandos,
+                 excepto na época de reprodução, quando forma casais. O seu vôo é ondulante.</Descricao>
+            <SmallDesc>Tenho asas mas não sei voar</SmallDesc>
+            <Idade>6</Idade>
+            <Foto>https://live.staticflickr.com/4058/4363245253_da441abfa9_b.jpg</Foto>
+            <Especie>
+                <NomeEspecie>calau-de-bico-vermelho</NomeEspecie>
+                <Tipo>
+                    <NomeTipoEspecie>Aves</NomeTipoEspecie>
+                    <HabitatTipoEspecie>Ar Grosso</HabitatTipoEspecie>
+                    <ImagemTipoEspecie>https://socientifica.com.br/wp-content/uploads/2022/07/mamiferos.jpg</ImagemTipoEspecie>
+                </Tipo>
+                <InfoEspecie></InfoEspecie>
+                <ImagemEspecie></ImagemEspecie>
+                <SubEspecie>
+                    <NomeSubEspecie></NomeSubEspecie>
+                    <Local>Africa</Local>
                 </SubEspecie>
             </Especie>
         </Animal>

@@ -166,12 +166,16 @@ footer{
 body{
   background: rgba(255, 255, 255, 0.5)  
 }
-@media screen and (max-width: 768px) {
+@media all and (min-width: 768px) {
   #hamburger-menu {
     display: inline;
   }
   #LabelClass{
     display:inline;
+  }
+  #LABELMENU
+  {
+    display:none;
   }
 }
 label .menu {

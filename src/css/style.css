@@ -67,6 +67,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content:  center;
+  margin-bottom: 50px;
 }
 
 .table-ajust{
@@ -208,6 +209,9 @@ body {
   opacity: 0.8;
 }
 
+td, th{
+  text-align: center;
+}
 footer{
   bottom: 0 !important;
 

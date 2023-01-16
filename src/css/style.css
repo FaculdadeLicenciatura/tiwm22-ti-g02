@@ -184,7 +184,7 @@ body {
 }
 .AnimalClass .follow {
   margin-right: 4%;
-  border-color: #2980b9;
+  border-color: #161616;
   color: #2980b9;
 }
 .AnimalClass h2 {
@@ -303,6 +303,10 @@ label a{
   line-height: 20px;
   z-index: 200;
 
+}
+
+li{
+  list-style: none;
 }
 label ul {
   z-index: 200;

@@ -318,7 +318,8 @@ label ul {
   background: #b8b8b8;
   border-color: #414141;
   padding-top: 25px;
-    padding-bottom: 25px;
+  padding-bottom: 25px;
+  position: fixed;
 }
 
 .section-details{

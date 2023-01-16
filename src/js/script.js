@@ -5,7 +5,7 @@ $(function() {
 
 const getURL = () => {
     var url;
-    if(window.location.href.split("/")[4] == "index.html")
+    if(window.location.href.split("/")[3] == "index.html")
     {
         url = "./xml/zoo.xml"
     }

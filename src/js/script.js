@@ -38,7 +38,7 @@ const getAnimalsByType = () => {
     const url = getURL();
     $.ajax(url).done(function (xml) {
         var getAnimalType = window.location.href.split('=')[1];
-        $("#pageTitle").text(`A nossa familia de ${getAnimalType}`)
+        $(".pageTitle").text(`A nossa familia de ${getAnimalType}`)
         $(xml).find("Animal").each(function () {
             if($(this).find("NomeTipoEspecie").text() == getAnimalType || getAnimalType == "Todos")
             {
@@ -137,11 +137,8 @@ const GetBilhetes = () => {
                         <td>
                             ${$(this).find("Nome").text()}
                         </td>
-                        <td>
+                        <td colspan="2">
                             ${$(this).find("Preco").text() + "€"}
-                        </td>
-                        <td>
-                            ${$(this).find("Quantidade").text()}
                         </td>
                     </tr>`);
             }

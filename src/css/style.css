@@ -1,4 +1,45 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
+
+#contact-form {
+  width: 400px;
+  padding: 20px;
+  margin: 50px auto;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+#contact-form input[type="button"] {
+  background-color: #BB2649;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contact-form input[type="button"]:hover {
+  background-color: #70162b;
+}
+
+
 .image{
     width: 500px;
     height: 300px;

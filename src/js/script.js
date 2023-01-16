@@ -36,7 +36,11 @@ function submitForm() {
         data: JSON.stringify(data),
         contentType: 'application/json'
     }).done(function() {
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
         alert('Contacto Enviado!');
+
     }).fail(function(error) {
         alert('Oops... Erro!' + JSON.stringify(error));
     });

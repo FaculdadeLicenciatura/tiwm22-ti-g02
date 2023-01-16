@@ -93,7 +93,7 @@ const getAnimalType = () => {
                 <figcaption>
                     <h2>${$(this).find("NomeTipoEspecie").text()}<span> Habitat: ${$(this).find("HabitatTipoEspecie").text()}</span></h2>
                     <p>${$(this).find("SmallDescTipoEspecie").text()}</p>
-                    <a href="./src/html/animals.html?tipo=${$(this).find("NomeTipoEspecie").text()}" class="info">Ver Mais</a>
+                    <a href="./html/animals.html?tipo=${$(this).find("NomeTipoEspecie").text()}" class="info">Ver Mais</a>
                 </figcaption>
             </figure>`);
             distinct.push($(this).find("NomeTipoEspecie").text());

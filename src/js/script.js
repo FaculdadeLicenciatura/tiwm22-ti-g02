@@ -1,10 +1,23 @@
-let url = "../xml/zoo.xml";
 
 $(function() {
     $('.carousel').carousel('cycle');
 });
 
+const getURL = () => {
+    var url;
+    console.log(window.location.href.split("/")[3])
+    if(window.location.href.split("/")[3] == "index.html")
+    {
+        url = "./src/xml/zoo.xml"
+    }
+    else{
+        url = "../xml/zoo.xml"
+    }
+    return url;
+}
+
 const getAnimals = () => {
+    const url = getURL();
     $.ajax(url).done(function (xml) {
         $(xml).find("Animal").each(function () {
             $("#animais").append(`
@@ -23,6 +36,7 @@ const getAnimals = () => {
 }
 
 const getAnimalsByType = () => {
+    const url = getURL();
     $.ajax(url).done(function (xml) {
         var getAnimalType = window.location.href.split('=')[1];
         $("#pageTitle").text(`A nossa familia de ${getAnimalType}`)
@@ -46,6 +60,7 @@ const getAnimalsByType = () => {
 }
 
 const getEspecies = () => {
+    const url = getURL();
     $.ajax(url).done(function (xml) {
         $(xml).find("Especie").each(function () {
             $("#especies").append(`
@@ -63,7 +78,8 @@ const getEspecies = () => {
 
 
 const getAnimalType = () => {
-    $.ajax(url).done(function (xml) {
+    const url = getURL();
+    $.ajax(getURL()).done(function (xml) {
         var distinct = [];
         $(xml).find("Tipo").each(function () {
             if(distinct.includes($(this).find("NomeTipoEspecie").text()))
@@ -88,6 +104,7 @@ const getAnimalType = () => {
     })
 }
 const GetBilhetes = () => {
+    const url = getURL();
     $.ajax(url).done(function (xml) {
         $(xml).find("Artigo").each(function () {
             console.log($(this).find("Categoria").text())
@@ -123,6 +140,7 @@ const GetBilhetes = () => {
 }
 
 const getEspecieDetail = () => {
+    const url = getURL();
     $.ajax(url).done(function (xml) {
         var getAnimalType = window.location.href.split('=')[1];
         $(xml).find("Animal").each(function () {

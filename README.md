@@ -1,63 +1,42 @@
 
-## Apresentação do projeto
+# AHG ZOO 
+Repositório para acolhimento do projeto desenvolvido para Tecnologias da Internet, disciplina do primeiro ano do TIWM (Tecnologias de Informação Web e Multimédia) do IPMAIA (Instituto politécnico da Maia). Desenvolvido pelo Grupo 02:
+[HenriqueOliveira](https://github.com/HenriqueOliveira29)
+[AlexandreVianda](https://github.com/AlexandrePViana)
+[GonçaloGarrido](https://github.com/GoncaloGarrido2)
+
+## Pequena Descrição
 
 O tema do nosso trabalho, vai ser um zoo, nesse zoo, irá existir animais, espécies, subespécies, locais, funcionários, loja e detalhes sobre o zoo.
 
-O Âmbito do projeto é apresentar um zoo com todas as suas categorias e informações de uma forma estruturada e organizada, como também dar opção para filtrar a informação que o utilizador pretende visualizar no momento com o objetivo de transmitir toda a informação e curiosidades sobre o zoo, os seus animais, tal como as suas espécies, sobre os seus funcionários, sobre a sua loja, e os seus artigos. 
+## Organização do Repositório
 
-A definição do zoo é a seguinte:
+* O **Source code** está na pasta [src](src/).
+* Os documentos do relatório está na pasta [doc](doc/).
 
-- O Zoo irá ser categorizado por:
-  - Morada
-    - Pais
-    - Cidade
-      - Cod-Postal
-  - Ano Fundação
-  - Quantidade Animais	
-		
-- Os animais vão ser categorizados por:
-  - Nome;
-  - Descrição;
-  - SmallDesc;
-  - Idade;
-  - Foto;
-  - Espécie;
+## Galeria
 
-- As espécies vão ser categorizadas por:
-  - NomeEspecie;
-  - Tipo;
-  - Locais onde habitam;
-  - InfoEspecie;
-  - ImagemEspecie
-  - Subespécie;
 
-- As subespécies vão ser categorizadas por:
-  - Nome;
-  - Local;
+## Tecnologias
 
-- Os tipos vão ser categorizados por:
-  - NomeTipoEspecie;
-  - HabitatTipoEspecie;
-  - ImagemTipoEspecie;
-  - SmallDescTipoEspecie;
-  - DescTipoEspecie;
+* XML
+* HTML5 + CSS3
+* Javascript
 
-- Os Funcionários vão ser categorizados por:
-  - Nome
-  - Descrição
-  - Especialidade
+## Librarias
 
-- A loja vai ser categorizada por:
-  - Artigos
-    - Nome
-    - Preço
-    - Categoria
-    - Quantidade
+* Bootstrap
+
+## Relatório
+
+### Apresentação do Projeto
+
+  * 1 Capitulo : [Apresentação do Projeto](./doc/c1.md)
+
+  * 2 Capitulo : [Apresentação do Projeto](./doc/c2.md)
 
 
 ## Interface com o utilizador
-
-
 
 
 
@@ -75,11 +54,6 @@ O projeto realizado é um website estático para demonstrar um zoo, onde iremos 
   Alexandre Viana A0XXXXX
   Gonçalo Garrido A0XXXXX 
 
-### Instalação
-
-Para conseguir correr o projeto localmente, precisa de abrir o VS Code e instalar a extensão Live Server, depois de já estar instalado vá ao documento index.html, click com o botão direito e selecionar "Open with Live Server"
-
-Para correr no netlify ...
 
 ### Regras de Utilização
 

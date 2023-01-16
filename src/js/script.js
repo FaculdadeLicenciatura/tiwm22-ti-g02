@@ -37,7 +37,7 @@ const getAnimals = () => {
 const getAnimalsByType = () => {
     const url = getURL();
     $.ajax(url).done(function (xml) {
-        var getAnimalType = window.location.href.split('=')[2];
+        var getAnimalType = window.location.href.split('=')[1];
         $("#pageTitle").text(`A nossa familia de ${getAnimalType}`)
         $(xml).find("Animal").each(function () {
             if($(this).find("NomeTipoEspecie").text() == getAnimalType || getAnimalType == "Todos")

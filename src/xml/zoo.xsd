@@ -89,6 +89,7 @@
                     </restriction>
                 </simpleType>
             </element>
+            <element name="Foto" type="anyURI" minOccurs="0"></element>
         </sequence>
     </complexType>
 
@@ -97,6 +98,7 @@
             <element name="Nome" type="string"></element>
             <element name="Descricao" type="string"></element>
             <element name="Especialidade" type="string"></element>
+            <element name="Foto" type="anyURI"></element>
         </sequence>
     </complexType>
 

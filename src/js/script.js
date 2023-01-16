@@ -5,7 +5,6 @@ $(function() {
 
 const getURL = () => {
     var url;
-    console.log(window.location.href.split("/")[3])
     if(window.location.href.split("/")[3] == "index.html")
     {
         url = "./src/xml/zoo.xml"
@@ -31,7 +30,7 @@ const getAnimals = () => {
             </figure>`);
         });
     }).fail(function () {
-        alert("Erro");
+        alert("Erro ao ir buscar os animais");
     })
 }
 
@@ -55,7 +54,7 @@ const getAnimalsByType = () => {
             }
         })
     }).fail(function () {
-        alert("Erro");
+        alert("Erro ao ir buscar os animais pelo tipo");
     })
 }
 
@@ -72,14 +71,14 @@ const getEspecies = () => {
             </figure>`);
         });
     }).fail(function () {
-        alert("Erro");
+        alert("Erro ao ir buscar as especies");
     })
 }
 
 
 const getAnimalType = () => {
     const url = getURL();
-    $.ajax(getURL()).done(function (xml) {
+    $.ajax(url).done(function (xml) {
         var distinct = [];
         $(xml).find("Tipo").each(function () {
             if(distinct.includes($(this).find("NomeTipoEspecie").text()))
@@ -100,42 +99,56 @@ const getAnimalType = () => {
             distinct.push($(this).find("NomeTipoEspecie").text());
         }});
     }).fail(function () {
-        alert("Erro");
+        alert("Erro ao ir buscar o tipo de animais");
     })
 }
+const GetArtigos = () => {
+    const url = getURL();
+    $.ajax(url).done(function (xml) {
+        $(xml).find("Artigo").each(function () {
+           
+            if($(this).find("Categoria").text() == "Artigo")
+            {
+                $("#articles").append(`
+                <figure class="AnimalClass">
+                    <img src="${$(this).find("Foto").text()}" class="image" alt="${$(this).find("Nome").text()} Image"/>
+                    <figcaption>
+                        <h2>${$(this).find("Nome").text()}</h2>
+                        <h3>${$(this).find("Preco").text() + "€"}</h3>
+                        <a href="" class="info">Comprar</a>
+                    </figcaption>
+                </figure>
+                `)
+            }
+        });
+    }).fail(function () {
+        alert("Erro ao ir buscar os artigos");
+    })
+
+}
+
 const GetBilhetes = () => {
     const url = getURL();
     $.ajax(url).done(function (xml) {
         $(xml).find("Artigo").each(function () {
-            console.log($(this).find("Categoria").text())
             if ($(this).find("Categoria").text() == "Bilhete") {
-                $("#precos").append(`<table>
-                        <thead>
-                            <tr>
-                                <td colspan="7">
-                                    Nome
-                                </td>
-                                <td colspan="3">
-                                    Preco
-                                </td>
-                        </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td colspan="7">
-                                    ${$(this).find("Nome").text()}
-                                </td>
-                                <td colspan="3">
-                                    ${$(this).find("Preco").text()}
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>`);
+                $(".tbody").append(`
+                    <tr>
+                        <td>
+                            ${$(this).find("Nome").text()}
+                        </td>
+                        <td>
+                            ${$(this).find("Preco").text() + "€"}
+                        </td>
+                        <td>
+                            ${$(this).find("Quantidade").text()}
+                        </td>
+                    </tr>`);
             }
 
         });
     }).fail(function () {
-        alert("fuck");
+        alert("Erro ao ir buscar os bilhetes");
     })
 }
 
@@ -179,6 +192,28 @@ const getEspecieDetail = () => {
             }
         })
     }).fail(function () {
-        alert("Erro lol");
+        alert("Erro ao ir buscar os detalhes do animal");
     })
+}
+
+const GetEmployees = () => {
+    const url = getURL();
+    $.ajax(url).done(function (xml) {
+        $(xml).find("funcionario").each(function () {
+            console.log($(this).find("Nome").text())
+            $(".Employees").append(`
+                <figure class="Employee">
+                        <img src="${$(this).find("Foto").text()}" alt="${$(this).find("Nome").text()}" class="EmpImage">
+                        <figcaption>
+                            <h3>${$(this).find("Nome").text()}</h5>
+                            <p>${$(this).find("Descricao").text()}</p>
+                            <p>${$(this).find("Especialidade").text()}</p>
+                        </figcaption>
+                </figure>
+                `)
+        });
+    }).fail(function () {
+        alert("Erro ao ir buscar os artigos");
+    })
+
 }

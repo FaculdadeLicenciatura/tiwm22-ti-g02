@@ -45,18 +45,33 @@
               </li>
             </ul>
           </nav>
-          
         </section>
       </header>
-      <section id="animais">
-        <h2 id="pageTitle"></h2>
-      </section>
+      <article>
+        <section id="articles">
+            <h2 id="pageTitle">Artigos</h2>
+        </section>
+        <section id="tickets">
+            <h2 id="pageTitle">Bilhetes</h2>
+            <table class="table table-bordered table-striped table-ajust">
+                <thead>
+                   <th scope="col">Nome</td>
+                   <th scope="col">Preco</td>
+                   <th scope="col">Quantidade</td>
+                </thead>
+                <tbody class="tbody">
+                    
+                </tbody>
+            </table>
+        </section>
+      </article>
       <footer class="footer text-center">
         <p>&copy; 2023 AHG ZOO. Todos os direitos NÃO reservados. Criado por: Alexandre Viana | Henrique Gomes | Gonçalo
           Garrido</p>
       </footer>
-      <script>  
-        getAnimalsByType();
-        </script> 
+   <script>
+        GetArtigos()
+        GetBilhetes();
+   </script>
 </body>
 </html>

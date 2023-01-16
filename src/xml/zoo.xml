@@ -423,16 +423,19 @@
             <Nome>Henrique</Nome>
             <Descricao>Jogar ás escondidas</Descricao>
             <Especialidade>Felinos</Especialidade>
+            <Foto>https://avatars.githubusercontent.com/u/68897798?v=4</Foto>
         </funcionario>
         <funcionario>
             <Nome>Alexandre</Nome>
             <Descricao>Jogar airsoft ou lá o que é</Descricao>
             <Especialidade>Caçador</Especialidade>
+            <Foto>https://avatars.githubusercontent.com/u/87643660?v=4</Foto>
         </funcionario>
         <funcionario>
             <Nome>Garrido</Nome>
             <Descricao>Estagiário</Descricao>
             <Especialidade>Ainda por apurar</Especialidade>
+            <Foto>https://avatars.githubusercontent.com/u/50460047?v=4</Foto>
         </funcionario>
     </Funcionarios>
     <Loja>
@@ -441,18 +444,21 @@
             <Preco>20.00</Preco>
             <Categoria>Artigo</Categoria>
             <Quantidade>30</Quantidade>
+            <Foto>https://www.ikea.com/pt/pt/images/products/djungelskog-peluche-leao__0877742_pe662341_s5.jpg</Foto>
         </Artigo>
         <Artigo>
             <Nome>Pluxe Nemo</Nome>
             <Preco>20.00</Preco>
             <Categoria>Artigo</Categoria>
             <Quantidade>20</Quantidade>
+            <Foto>https://a-static.mlcdn.com.br/1500x1500/nemo-bicho-de-pelucia-peixe-palhaco-antialergica-pelucia-30-cm-mundo-da-pelucia/gamelandbrinquedos/7739p/49a1719b6c0a3693fe35e3feac885c44.jpg</Foto>
         </Artigo>
         <Artigo>
-            <Nome>Pluxe Tigre</Nome>
+            <Nome>Pluxe Panda</Nome>
             <Preco>20.00</Preco>
             <Categoria>Artigo</Categoria>
             <Quantidade>50</Quantidade>
+            <Foto>https://www.ikea.com/pt/pt/images/products/djungelskog-peluche-panda__0710188_pe727391_s5.jpg?f=s</Foto>
         </Artigo>
         <Artigo>
             <Nome>Bilhete Adulto</Nome>

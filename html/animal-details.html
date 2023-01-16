@@ -2,18 +2,23 @@
 <html lang="en">
 
 <head>
-  <title>Zoo Planet</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../css/bootstrap.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Duru+Sans|Actor' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Duru+Sans%7CActor' rel='stylesheet' type='text/css'>
   <link href="../css/style.css" rel="stylesheet">
+  <script src="../js/jquery.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/script.js"></script>
+  <title>Zoo Planet Animals</title>
 </head>
 
 <body>
-  <header class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <header class="navbar navbar-default navbar-fixed-top">
     <section class="container" id="especiedetail">
       <div class="navbar-header">
-        <a class="navbar-brand" href="../index.html"><span class="magenta">AHG</span> ZOO</a>
+        <a class="navbar-brand" href="../index.html"><h2 class="magenta">AHG</h2> ZOO</a>
       </div>
       <label id="LABELMENU">
         <input type="checkbox">
@@ -24,7 +29,7 @@
           <li> <a href="#">Contact</a> </li>
         </ul>
       </label>
-      <nav role="navigation" class="collapse navbar-collapse navbar-right">
+      <nav class="collapse navbar-collapse navbar-right">
         <ul class="navbar-nav nav">
           <li class="dropdown">
             <a data-toggle="dropdown" href="#" class="dropdown-toggle">Animais <b class="caret"></b></a>
@@ -45,7 +50,6 @@
   <!--inicio-->
   <figure id="sectiondetails" class="container section-details section-details" >
     
-    
   </figure>
   <footer class="footer-fixed text-center">
     <p>&copy; 2023 AHG ZOO. Todos os direitos NÃO reservados. Criado por: Alexandre Viana | Henrique Gomes | Gonçalo
@@ -55,9 +59,10 @@
   <script src="../js/bootstrap.min.js"></script>
   <script src="../js/bootshape.js"></script>
   <script src="../js/script.js"></script>
+  <script>
+    getEspecieDetail();
+  </script>
 </body>
-<script type="text/javascript">
-  getEspecieDetail();
-</script>
+
 
 </html>

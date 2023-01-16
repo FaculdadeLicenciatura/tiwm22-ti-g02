@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
 .image{
     width: 500px;
     height: 300px;
@@ -9,6 +10,7 @@ body {
   background-repeat:repeat;
   justify-content:  center;
   overflow-x: hidden;
+  font-family: 'Roboto', Arial, sans-serif;
 }
 
 .navbar {
@@ -25,6 +27,7 @@ body {
 .magenta
 {
   color:#BB2649;
+  display: inline;
 }
 .thumbs {
   padding: 40px 0;
@@ -57,7 +60,7 @@ body {
     flex-wrap: wrap;
     justify-content:  center;
 }
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
+
 .AnimalClass {
   font-family: 'Roboto', Arial, sans-serif;
   position: relative;
@@ -76,9 +79,7 @@ body {
 
 }
 .AnimalClass * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
 .AnimalClass img {
@@ -190,7 +191,6 @@ label .menu {
   height: 90px;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 50% 50% 50% 50%;
-  -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5), 0 0 0 0 rgba(255, 255, 255, 0.5);
   cursor: pointer;
@@ -205,14 +205,11 @@ label .hamburger {
   height: 2px;
   background: #BB2649;
   display: block;
-  -webkit-transform-origin: center;
   transform-origin: center;
-  -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
 }
 
 label .hamburger:after, label .hamburger:before {
-  -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   content: "";
   position: absolute;
@@ -235,20 +232,17 @@ label input:checked + .menu {
 }
 
 label input:checked + .menu .hamburger {
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   
 }
 
 label input:checked + .menu .hamburger:after {
-  -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   bottom: 0;
   
 }
 
 label input:checked + .menu .hamburger:before {
-  -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   top: 0;
   
@@ -268,10 +262,8 @@ label ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   opacity: 0;
-  -webkit-transition: .25s 0s ease-in-out;
   transition: .25s 0s ease-in-out;
 }
 

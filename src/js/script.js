@@ -14,7 +14,33 @@ const getURL = () => {
     }
     return url;
 }
-
+function submitForm() {
+    // Get form data
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+  
+    var data = {
+        service_id: 'service_r7utrm4',
+        template_id: 'template_v95074k',
+        user_id: 'user_wZaMbT1BRr0apWJA897IS',
+        template_params: {
+            'username': name,
+            'message': message,
+            'reply_to' : email
+        }
+    };
+     
+    $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+        type: 'POST',
+        data: JSON.stringify(data),
+        contentType: 'application/json'
+    }).done(function() {
+        alert('Contacto Enviado!');
+    }).fail(function(error) {
+        alert('Oops... Erro!' + JSON.stringify(error));
+    });
+  }
 const getAnimals = () => {
     const url = getURL();
     $.ajax(url).done(function (xml) {
